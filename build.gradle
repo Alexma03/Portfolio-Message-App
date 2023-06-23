@@ -9,12 +9,14 @@ buildscript {
         classpath libs.gradle
         classpath libs.kotlin.gradle.plugin
         classpath libs.hilt.android.gradle.plugin
+        classpath libs.relay.gradle.plugin
     }
 }
 
 plugins {
-alias(libs.plugins.androidApplication) apply false
-    alias(libs.plugins.kotlinAndroid) apply false
+alias(libs.plugins.androidApplication) version("8.1.0-beta03") apply false
+    alias(libs.plugins.kotlinAndroid) version("1.8.21") apply false
+    id 'com.google.relay' version '0.3.06'
 
 }
 

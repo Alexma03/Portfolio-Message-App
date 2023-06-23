@@ -1,7 +1,8 @@
 [versions]
-agp = "8.2.0-alpha07"
+agp = "8.2.0-alpha09"
+androidx-compose-bom = "2023.06.00"
 androidx-hilt-lifecycle-viewmodel = "1.0.0"
-gradle = "7.0.4"
+gradle = "8.2.0-alpha09"
 gson = "2.10.1"
 hilt-android = "2.46.1"
 hilt-compiler = "1.0.0"
@@ -11,19 +12,23 @@ core-ktx = "1.9.0"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
-kotlin-gradle-plugin = "1.5.31"
+kotlin-gradle-plugin = "1.6.21"
 lifecycle-runtime-ktx = "2.6.1"
 activity-compose = "1.7.2"
 compose-bom = "2023.03.00"
+material3-icons-extended = "1.0.0-alpha07"
+relay-gradle-plugin = "0.3.06"
 retrofit = "2.9.0"
 
 [libraries]
+androidx-compose-bom-2023_06_00 = { module = "androidx.compose:compose-bom", version.ref = "androidx-compose-bom" }
 androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt-compiler" }
 androidx-hilt-lifecycle-viewmodel = { module = "androidx.hilt:hilt-lifecycle-viewmodel", version.ref = "hilt-lifecycle-viewmodel" }
 androidx-hilt-lifecycle-viewmodel-1_0_0 = { module = "androidx.hilt:hilt-lifecycle-viewmodel", version.ref = "androidx-hilt-lifecycle-viewmodel" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "androidx-hilt-lifecycle-viewmodel" }
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle-runtime-ktx" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle-runtime-ktx" }
+androidx-material3-icons-extended = { module = "androidx.compose.material3:material3-icons-extended", version.ref = "material3-icons-extended" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
@@ -39,6 +44,7 @@ kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", v
 lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
 activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+relay-gradle-plugin = { module = "com.google.relay:relay-gradle-plugin", version.ref = "relay-gradle-plugin" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 ui = { group = "androidx.compose.ui", name = "ui" }
 ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }

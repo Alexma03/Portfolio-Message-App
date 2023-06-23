@@ -7,7 +7,11 @@ import com.alexma.messagelist.message.domain.item.MessageItem
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.forEach
 import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 import javax.inject.Inject
 
 @HiltViewModel
@@ -31,5 +35,10 @@ class MessageListViewModel @Inject constructor(
 
             }
         }
+    }
+
+    fun dateFormatter(date: Date): String {
+        val formatter = SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault())
+        return formatter.format(date)
     }
 }
